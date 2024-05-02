@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+           <img src="images/logo.png" alt="logo" class="logo"> 
+           <ul>
+            <li><a href="">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+           </ul>
+        </nav>
+        <div class="header-text">
+            <p>Fullstack Web Developer</p>
+            <h1>Hi, I'am  <span>Yeswanth </span><br>From India</h1>
+            <a href="" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+   </div>
+
+   <!-- About section starts -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_9333.JPG" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quo facere voluptatum eum libero, ratione nisi, odit ipsam illum ipsa vel cumque adipisci tenetur doloribus beatae aut culpa perferendis illo!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quos necessitatibus dolorem illo aut expedita facere quidem et, molestiae, cum delectus eaque sed obcaecati labore maiores neque. Eaque, voluptatibus quisquam?
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- skills -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full Stack Web Developer</span><br>Designing web interfaces</li>
+                        <li><span>App development</span><br>Designing web appilcations</li>
+                        <li><span>Full Stack Web Developer</span><br>Designing web interfaces</li>
+                    </ul>
+                </div>
+                <!--experience  -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-curent</span><br>Lorem ipsum dolor sit.</li>
+                        <li><span>2021-2023</span><br>Lorem ipsum dolor sit.</li>
+                        
+                    </ul>
+                </div>
+                    <!-- education -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015-2018</span><br>Diploma in agricultura engineering</li>
+                        <li><span>2018-2021</span><br>Agricultural engineering</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
+                <a href="">learn more</a>
+            </div>
+
+            <div>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
+                <a href="">learn more</a>
+            </div>
+
+            <div>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
+                <a href="">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+            <img src="images/work1.jpg" alt="">
+            <div class="layer">
+                <h3>social media app</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugiat vitae autem tempora nemo tempore.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/work2.jpg" alt="">
+            <div class="layer">
+                <h3>social media app</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugiat vitae autem tempora nemo tempore.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/work3.jpg" alt="">
+            <div class="layer">
+                <h3>social media app</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugiat vitae autem tempora nemo tempore.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+
+
+      </div>
+      <a href="" class="btn">see more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bxl-gmail' ></i>Contact@example.com</p>
+                <p><i class='bx bxs-phone' ></i>1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+                
+            </div>
+
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Email Address" required>
+                    <textarea  name="message" placeholder="your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; 2024 <i class='bx bxs-heart' ></i> Yeswanth</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
