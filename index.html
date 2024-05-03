@@ -6,29 +6,33 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="script.js"></script>
+    
 
 </head>
 <body>
-   <div id="header">
-    <div class="container">
-        <nav>
-           <img src="images/logo.png" alt="logo" class="logo"> 
-           <ul>
-            <li><a href="">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
-           </ul>
-        </nav>
-        <div class="header-text">
-            <p>Fullstack Web Developer</p>
-            <h1>Hi, I'am  <span>Yeswanth </span><br>From India</h1>
-            <a href="doc/YESWANTH-RESUME.pdf" download class="btn btn2">Download CV</a>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/logo.png" alt="logo" class="logo"> 
+               <ul id="sidemenu">
+                <li><a href="">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class='bx bx-x' onclick="closeNav()"></i>
+               </ul>
+               <i class='bx bx-menu' onclick="openNav()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Web Developer</p>
+                <h1>Hi, I'am  <span>Yeswanth </span><br>From India</h1>
+                <a href="doc/YESWANTH-RESUME.pdf" download class="btn btn2">Download CV</a>
+            </div>
         </div>
     </div>
-   </div>
+    
+    
 
    <!-- About section starts -->
 <div id="about">
@@ -94,21 +98,42 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
-                <h2>Web Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
-                <a href="">learn more</a>
+                <h2>Web Application Development</h2>
+                <p>Web Application Development involves creating a complete web application for our clients, encompassing both the front-end and back-end development.
+
+                    <!-- Front-end: User Interface of the application built using technologies like HTML, CSS, and JavaScript. We might also use frameworks like React, Angular, or Vue.js to create more complex user interfaces. -->
+                    
+                    
+                    
+                    <!-- Back-end (): Server-side logic responsible for things like server-side programming, database interactions, user authentication, server configuration, and more. As a full-stack developer with knowledge of Java, We use frameworks like Spring Boot for back-end development.
+                    By offering to build complete web applications, you’re providing a valuable service where we handle all aspects of development, from the user-facing elements to the server-side logic. This can be a significant advantage for clients looking for a comprehensive solution. 😊 -->
+                    
+                    </p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
             </div>
 
             <div>
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
-                <a href="">learn more</a>
+                <h2>API Development.</h2>
+                <p>We can develop APIs for existing applications or databases. This allows other software to interact with our application.</p>
+                <a href=""><i class='bx bx-link-external'></i></a>
             </div>
 
             <div>
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum repudiandae libero aspernatur. Doloremque aliquam sed at laborum iure perspiciatis ea illo nemo quisquam, a voluptatibus qui corrupti? Ab, vel.</p>
-                <a href="">learn more</a>
+                <h2>Database Management.</h2>
+                <p>We offering database management services, we’re ensuring that the application’s data is stored efficiently, securely, and in a way that it can be easily accessed and manipulated by the application.</p>
+                <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+
+            <div>
+                <h2>Maintenace and Updates.</h2>
+                <p>We offering maintenance and updates, we’re ensuring that the web application remains up-to-date, secure, and bug-free, providing the best possible experience for its users.</p>
+                <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+
+            <div>
+                <h2>Consultation Services.</h2>
+                <p>We offering consultation services, we’re not just building web applications for clients, but also guiding them to make informed decisions and follow the best practices in web development.</p>
+                <a href=""><i class='bx bx-link-external'></i></a>
             </div>
         </div>
     </div>
@@ -169,12 +194,13 @@
             </div>
 
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="text" name="email" placeholder="Email Address" required>
-                    <textarea  name="message" placeholder="your Message" rows="6"></textarea>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Email Address" required>
+                    <textarea  name="Message" placeholder="your Message" rows="6"></textarea>
                     <button type="submit" class="btn btn2">submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -191,6 +217,6 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
