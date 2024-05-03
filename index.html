@@ -44,10 +44,12 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quos necessitatibus dolorem illo aut expedita facere quidem et, molestiae, cum delectus eaque sed obcaecati labore maiores neque. Eaque, voluptatibus quisquam?
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <a class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</a>
+                    <a class="tab-links" onclick="opentab(event, 'experience')">Experience</a>
+                    <a class="tab-links" onclick="opentab(event, 'education')">Education</a>
                 </div>
+                
+                
                 <!-- skills -->
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
