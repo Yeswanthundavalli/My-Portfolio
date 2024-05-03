@@ -333,6 +333,12 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 .copyright{
     width: 100%;
     text-align: center;
@@ -347,11 +353,6 @@ form .btn2{
 strong{
     color: #239a53;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 0bd5887aea2efca68e31e413eea8ecb52c277b1e
-
 /* for small devices */
 nav .bx{
     display: none;
@@ -404,9 +405,4 @@ nav ul .bx{
 .copyright{
     font-size: 14px;
 }
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
 }
