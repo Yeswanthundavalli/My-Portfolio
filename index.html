@@ -6,6 +6,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -24,7 +25,7 @@
         <div class="header-text">
             <p>Fullstack Web Developer</p>
             <h1>Hi, I'am  <span>Yeswanth </span><br>From India</h1>
-            <a href="" download class="btn btn2">Download CV</a>
+            <a href="doc/YESWANTH-RESUME.pdf" download class="btn btn2">Download CV</a>
         </div>
     </div>
    </div>
@@ -179,23 +180,5 @@
 
 
 
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-</script>
 </body>
 </html>
